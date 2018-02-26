@@ -2,6 +2,7 @@ FROM debian:jessie
 MAINTAINER Jeremy Shimko <jeremy.shimko@gmail.com>
 
 RUN groupadd -r node && useradd -m -g node node
+USER node
 
 # Gosu
 ENV GOSU_VERSION 1.10
